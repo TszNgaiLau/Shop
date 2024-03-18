@@ -38,7 +38,16 @@ public class Shop {
             int choice = scan.nextInt();
             choice--;
             scan.nextLine();
-
+        } else if (option.equals("m")) {
+            for (int i = 0; i < consumables.size(); i++) {
+                System.out.println((i + 1) + ". " + consumables.get(i));
+            }
+            System.out.print("What do you wish to buy?(Choose by entering the number in front of the item) :");
+            int choice = scan.nextInt();
+            choice--;
+            scan.nextLine();
+        } else {
+            System.out.println("Get ");
         }
 
 
